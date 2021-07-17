@@ -138,8 +138,11 @@ class _RandomCharacterPageState extends State<RandomCharacterPage> {
                                   width: 15,
                                   height: 40,
                                 ),
-                                Text(snapshot.data!.category.toString(),
-                                    style: TextStyle(fontSize: 16)),
+                                Flexible(
+                                  child: Text(
+                                      snapshot.data!.category.toString(),
+                                      style: TextStyle(fontSize: 16)),
+                                )
                               ],
                             ),
                             Divider(),

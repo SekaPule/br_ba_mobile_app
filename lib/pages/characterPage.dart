@@ -144,8 +144,11 @@ class _CharacterState extends State<Character> {
                               width: 15,
                               height: 40,
                             ),
-                            Text(state.futureCharacter.category.toString(),
-                                style: TextStyle(fontSize: 16)),
+                            Flexible(
+                              child: Text(
+                                  state.futureCharacter.category.toString(),
+                                  style: TextStyle(fontSize: 16)),
+                            ),
                           ],
                         ),
                         Divider(),
