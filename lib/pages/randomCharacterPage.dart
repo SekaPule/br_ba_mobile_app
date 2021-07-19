@@ -148,7 +148,7 @@ class _RandomCharacterPageState extends State<RandomCharacterPage> {
                             Divider(),
                             Column(
                               children: [
-                                Text("Occupation",
+                                Text("Occupation:",
                                     style: TextStyle(fontSize: 18)),
                                 Text(snapshot.data!.occupation.toString(),
                                     style: TextStyle(fontSize: 16)),

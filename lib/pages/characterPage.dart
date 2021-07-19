@@ -154,7 +154,7 @@ class _CharacterState extends State<Character> {
                         Divider(),
                         Column(
                           children: [
-                            Text("Occupation", style: TextStyle(fontSize: 18)),
+                            Text("Occupation:", style: TextStyle(fontSize: 18)),
                             Text(state.futureCharacter.occupation.toString(),
                                 style: TextStyle(fontSize: 16)),
                           ],
