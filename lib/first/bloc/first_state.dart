@@ -11,8 +11,8 @@ class FirstLoaded extends FirstState {
   FirstLoaded(this.allcharacters);
 }
 
-class FirstLoadedByName extends FirstState {
-  final List<AllCharacters> searchCharacters;
+class LoadingError extends FirstState {
+  final Exception exception;
 
-  FirstLoadedByName(this.searchCharacters);
+  LoadingError(this.exception);
 }
