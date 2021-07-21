@@ -71,12 +71,12 @@ class _GridCharactersState extends State<GridCharacters> {
             );
           },
         );
+      } else if (state is LoadingError) {
+        return Center(
+          child: Text(state.exception.toString()),
+        );
       }
-      return Center(
-        child: CircularProgressIndicator(
-          color: Colors.green[900],
-        ),
-      );
+      return Container();
     });
   }
 }
